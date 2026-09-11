@@ -1,0 +1,4 @@
+R101|Quiet Study Room
+R102|Laptop Station
+R103|Calculators
+R104|Computer Lab Seat

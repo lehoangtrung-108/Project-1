@@ -1,0 +1,33 @@
+SAMPLE TERMINAL SESSION
+=======================
+
+Choice: 1
+--- Resources ---
+R101 | Quiet Study Room | Available
+R102 | Laptop Station | Available
+R103 | Calculators | Available
+R104 | Computer Lab Seat | Available
+
+Choice: 2
+Student name: Alice
+Resource ID: R101
+Reservation date: 2026-09-15
+Reservation created successfully.
+#1001 | Student: Alice | Resource: R101 | Date: 2026-09-15
+
+Choice: 2
+Student name: Bob
+Resource ID: R101
+Resource unavailable. Added to waiting list.
+
+Choice: 4
+--- Waiting List ---
+1. Bob -> Resource R101
+
+Choice: 3
+Reservation ID: 1001
+Reservation cancelled and added to cancellation history.
+Resource automatically assigned to next waiting student:
+#1002 | Student: Bob | Resource: R101 | Date: 2026-09-15
+
+This demonstrates: linked list removal, stack push, queue FIFO processing.

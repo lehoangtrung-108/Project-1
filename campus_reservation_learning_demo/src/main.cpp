@@ -1,0 +1,4 @@
+#include <iostream>
+#include "DemoManager.h"
+void menu(){std::cout<<"\n====================================\n   Campus Reservation Learning Demo\n====================================\n1. View resources\n2. Create reservation\n3. Cancel reservation\n4. View waiting list\n5. Undo cancellation\n6. View active reservations\n7. View cancellation history\n0. Exit\nChoice: ";}
+int main(){DemoManager m;if(!m.loadResources("data/resources.txt"))return 1;int c=-1;while(c!=0){menu();std::cin>>c;switch(c){case 1:m.showResources();break;case 2:m.createReservation();break;case 3:m.cancelReservation();break;case 4:m.showWaiting();break;case 5:m.undo();break;case 6:m.showReservations();break;case 7:std::cout<<"\nCancellation history is maintained as a stack.\n";break;case 0:std::cout<<"Goodbye!\n";break;default:std::cout<<"Invalid menu choice.\n";}}}
